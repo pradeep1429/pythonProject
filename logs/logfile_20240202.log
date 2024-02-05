@@ -1,0 +1,7 @@
+2024-02-02 17:58:52,151 :INFO : test_method :self driver ref is:2690457443152
+2024-02-02 17:58:52,176 :INFO : test_method :title is: DEMOQA
+2024-02-02 17:58:52,194 :INFO : test_method :current url is: https://demoqa.com/books
+2024-02-02 17:58:52,341 :INFO : test_method :Login page opened
+2024-02-02 17:58:52,471 :INFO : test_method :Entered Username: testuserr
+2024-02-02 17:58:52,608 :INFO : test_method :Entered Password: Dem0@user
+2024-02-02 17:59:22,730 :ERROR : test_method :Login is not successful
