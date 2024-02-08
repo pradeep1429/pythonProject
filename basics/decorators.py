@@ -29,3 +29,23 @@ def updateCase(value):
 updateCase("PRADEEP")
 updateCase("pradeep")
 
+def eqdecor(func):
+    def inner(text):
+        print("==========")
+        func(text)
+        print("==========")
+    return inner
+
+def dashdecor(func):
+    def inner(text):
+        print("----------")
+        func(text)
+        print("----------")
+    return inner
+
+@eqdecor
+@dashdecor
+def pattern(value):
+    print(value)
+
+pattern("pradeep")

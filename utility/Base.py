@@ -6,15 +6,15 @@ from pathlib import Path
 import pytest
 
 
-@pytest.mark.usefixtures("setup")
+# @pytest.mark.usefixtures("setup")
 class Base:
     ROOT_PATH = str(Path(__file__).parent.parent)
-
-    def getLogger(self):
+    @staticmethod
+    def getLogger():
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
         formatter = logging.Formatter("%(asctime)s :%(levelname)s : %(name)s :%(message)s")
-        logFilePath = self.ROOT_PATH + "/logs/" + 'logfile_'+ datetime.now().strftime("%Y%m%d") +'.log'
+        logFilePath = Base.ROOT_PATH + "/logs/" + 'logfile_'+ datetime.now().strftime("%Y%m%d") +'.log'
         #logFilePath = self.ROOT_PATH + "/logs/" + 'logfile.log'
         fileHandler = logging.FileHandler(logFilePath, mode='w')
         fileHandler.setFormatter(formatter)

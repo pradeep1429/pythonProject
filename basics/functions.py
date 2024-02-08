@@ -36,7 +36,7 @@ def factorial(n):
         return n * factorial(n - 1)
 
 print(factorial(10))
-
+print("$$$$$$$$$$$$$$$$$$$$$")
 
 def update(x):
     print(id(x))
@@ -46,7 +46,7 @@ a = 10
 print(id(a))
 update(a)
 update(10)
-
+print("$$$$$$$$$$$$$$$$$$$$$")
 def outer_function():
     num = 20
 

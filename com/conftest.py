@@ -1,6 +1,8 @@
+import configparser
+from datetime import datetime
 
 import pytest
-from datetime import datetime
+
 from driverManager.driverutils import DriverFactory
 from utility.Base import Base
 
@@ -12,19 +14,29 @@ from utility.Base import Base
 # package: the fixture is destroyed during teardown of the last test in the package.
 # session: the fixture is destroyed at the end of the test session.
 
+def get_common_info():
+    ev = configparser.ConfigParser()
+    ev.read(Base.ROOT_PATH + '\\data.ini')
+    return ev['common']
 
 @pytest.fixture(scope="class")
 def setup(request):
-    request.cls.driver = DriverFactory.get_driver("chrome")
-    request.cls.driver.get("https://demoqa.com/books")
+    request.cls.driver = DriverFactory.get_driver(get_common_info().get('browser'))
+    request.cls.driver.get(get_common_info().get('base_url'))
     yield
-    request.cls.driver.close()
+    request.cls.driver.quit()
+
+@pytest.fixture(scope="session")
+def setup_session():
+    driver = DriverFactory.get_driver(get_common_info().get('browser'))
+    driver.get(get_common_info().get('base_url'))
+    yield driver
+    driver.quit()
 
 @pytest.fixture(scope="module")
 def test_name(request):
     return request.node.name
 
-#Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.:param item:
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     pytest_html = item.config.pluginmanager.getplugin('html')

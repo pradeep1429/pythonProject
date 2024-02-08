@@ -1,0 +1,6 @@
+2024-02-06 20:43:18,214 :INFO : test_locked_user_login :self driver ref is:2225882787408
+2024-02-06 20:43:18,218 :INFO : test_locked_user_login :title is: Swag Labs
+2024-02-06 20:43:18,221 :INFO : test_locked_user_login :current url is: https://www.saucedemo.com/
+2024-02-06 20:43:18,266 :INFO : test_locked_user_login :Entered Username: locked_out_user
+2024-02-06 20:43:18,318 :INFO : test_locked_user_login :Entered Password: secret_sauce
+2024-02-06 20:43:18,372 :INFO : test_locked_user_login :Given user is locked. error: Epic sadface: Sorry, this user has been locked out.

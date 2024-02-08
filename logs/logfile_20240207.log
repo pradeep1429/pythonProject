@@ -1,0 +1,102 @@
+2024-02-07 20:06:28,788 :INFO : TestLoginSession :self driver ref is:2893556659088
+2024-02-07 20:06:28,837 :INFO : TestLoginSession :title is: Swag Labs
+2024-02-07 20:06:28,887 :INFO : TestLoginSession :current url is: https://www.saucedemo.com/
+2024-02-07 20:06:29,455 :INFO : TestLoginSession :Entered Username: locked_out_user
+2024-02-07 20:06:29,819 :INFO : TestLoginSession :Entered Password: secret_sauce
+2024-02-202024-02-07 20:07:00,033 :ERROR : TestOrderPlacement :Item not added to cart: 
+Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="add-to-cart-sauce-labs-backpack"]"}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E2385E42+3538674]
+	(No symbol) [0x00007FF7E1FA4C02]
+	(No symbol) [0x00007FF7E1E55AEB]
+	(No symbol) [0x00007FF7E1E9BF4E]
+	(No symbol) [0x00007FF7E1E9C0CC]
+	(No symbol) [0x00007FF7E1EDE477]
+	(No symbol) [0x00007FF7E1EBF0EF]
+	(No symbol) [0x00007FF7E1EDBDE3]
+	(No symbol) [0x00007FF7E1EBEE53]
+	(No symbol) [0x00007FF7E1E8F514]
+	(No symbol) [0x00007FF7E1E90631]
+	GetHandleVerifier [0x00007FF7E23B6CAD+3738973]
+	GetHandleVerifier [0x00007FF7E240C506+4089270]
+	GetHandleVerifier [0x00007FF7E2404823+4057299]
+	GetHandleVerifier [0x00007FF7E20D5C49+720121]
+	(No symbol) [0x00007FF7E1FB126F]
+	(No symbol) [0x00007FF7E1FAC304]
+	(No symbol) [0x00007FF7E1FAC432]
+	(No symbol) [0x00007FF7E1F9BD04]
+	(No symbol) [0x00007FFFDC5C7344]
+	RtlUserThreadStart [0x00007FFFDD1E26B1+33]
+
+2024-02-07 20:07:00,033 :ERROR : TestOrderPlacement :iteration {'user_name': 'locked_out_user', 'password': 'secret_sauce'} failed
+2024-02-07 20:07:00,034 :INFO : TestOrderPlacement :self driver ref is:1763375091600
+2024-02-07 20:07:00,037 :INFO : TestOrderPlacement :title is: Swag Labs
+2024-02-07 20:07:00,040 :INFO : TestOrderPlacement :current url is: https://www.saucedemo.com/
+2024-02-07 20:07:00,118 :INFO : TestOrderPlacement :Entered Username: locked_out_user
+2024-02-07 20:07:00,188 :INFO : TestOrderPlacement :Entered Password: secret_sauce
+2024-02-07 20:07:30,266 :ERROR : TestOrderPlacement :Item not added to cart: 
+Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="add-to-cart-sauce-labs-backpack"]"}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E2385E42+3538674]
+	(No symbol) [0x00007FF7E1FA4C02]
+	(No symbol) [0x00007FF7E1E55AEB]
+	(No symbol) [0x00007FF7E1E9BF4E]
+	(No symbol) [0x00007FF7E1E9C0CC]
+	(No symbol) [0x00007FF7E1EDE477]
+	(No symbol) [0x00007FF7E1EBF0EF]
+	(No symbol) [0x00007FF7E1EDBDE3]
+	(No symbol) [0x00007FF7E1EBEE53]
+	(No symbol) [0x00007FF7E1E8F514]
+	(No symbol) [0x00007FF7E1E90631]
+	GetHandleVerifier [0x00007FF7E23B6CAD+3738973]
+	GetHandleVerifier [0x00007FF7E240C506+4089270]
+	GetHandleVerifier [0x00007FF7E2404823+4057299]
+	GetHandleVerifier [0x00007FF7E20D5C49+720121]
+	(No symbol) [0x00007FF7E1FB126F]
+	(No symbol) [0x00007FF7E1FAC304]
+	(No symbol) [0x00007FF7E1FAC432]
+	(No symbol) [0x00007FF7E1F9BD04]
+	(No symbol) [0x00007FFFDC5C7344]
+	RtlUserThreadStart [0x00007FFFDD1E26B1+33]
+
+2024-02-07 20:07:30,266 :ERROR : TestOrderPlacement :iteration {'user_name': 'locked_out_user', 'password': 'secret_sauce'} failed
+2024-02-07 20:07:30,268 :INFO : TestOrderPlacement :self driver ref is:1763375091600
+2024-02-07 20:07:30,272 :INFO : TestOrderPlacement :title is: Swag Labs
+2024-02-07 20:07:30,276 :INFO : TestOrderPlacement :current url is: https://www.saucedemo.com/
+2024-02-07 20:07:30,360 :INFO : TestOrderPlacement :Entered Username: error_user
+2024-02-07 20:07:30,444 :INFO : TestOrderPlacement :Entered Password: secret_sauce
+2024-02-07 20:07:30,690 :INFO : TestOrderPlacement :Item added to cart
+2024-02-07 20:07:30,766 :INFO : TestOrderPlacement :Checkout page opened
+2024-02-07 20:07:30,848 :INFO : TestOrderPlacement :First names entered as: test
+2024-02-07 20:07:30,923 :INFO : TestOrderPlacement :last_name entered as: user
+2024-02-07 20:07:30,999 :INFO : TestOrderPlacement :postal_code entered as: 23423
+2024-02-07 20:07:31,062 :INFO : TestOrderPlacement :Continue button clicked
+2024-02-07 20:07:31,111 :INFO : TestOrderPlacement :Finish button clicked
+2024-02-07 20:08:01,130 :ERROR : TestOrderPlacement :Something went wrong, Order not placed:
+ Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='complete-header']"}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E2385E42+3538674]
+	(No symbol) [0x00007FF7E1FA4C02]
+	(No symbol) [0x00007FF7E1E55AEB]
+	(No symbol) [0x00007FF7E1E9BF4E]
+	(No symbol) [0x00007FF7E1E9C0CC]
+	(No symbol) [0x00007FF7E1EDE477]
+	(No symbol) [0x00007FF7E1EBF0EF]
+	(No symbol) [0x00007FF7E1EDBDE3]
+	(No symbol) [0x00007FF7E1EBEE53]
+	(No symbol) [0x00007FF7E1E8F514]
+	(No symbol) [0x00007FF7E1E90631]
+	GetHandleVerifier [0x00007FF7E23B6CAD+3738973]
+	GetHandleVerifier [0x00007FF7E240C506+4089270]
+	GetHandleVerifier [0x00007FF7E2404823+4057299]
+	GetHandleVerifier [0x00007FF7E20D5C49+720121]
+	(No symbol) [0x00007FF7E1FB126F]
+	(No symbol) [0x00007FF7E1FAC304]
+	(No symbol) [0x00007FF7E1FAC432]
+	(No symbol) [0x00007FF7E1F9BD04]
+	(No symbol) [0x00007FFFDC5C7344]
+	RtlUserThreadStart [0x00007FFFDD1E26B1+33]
+
