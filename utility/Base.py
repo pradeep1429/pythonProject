@@ -3,8 +3,6 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-import pytest
-
 
 # @pytest.mark.usefixtures("setup")
 class Base:
@@ -14,7 +12,8 @@ class Base:
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
         formatter = logging.Formatter("%(asctime)s :%(levelname)s : %(name)s :%(message)s")
-        logFilePath = Base.ROOT_PATH + "/logs/" + 'logfile_'+ datetime.now().strftime("%Y%m%d") +'.log'
+        logFilePath = Base.ROOT_PATH + "/logs/" + loggerName + 'log_'+ datetime.now().strftime("%Y%m%d") +'.log'
+        # logFilePath = Base.ROOT_PATH + "/logs/" + 'logfile_'+ datetime.now().strftime("%Y%m%d") +'.log'
         #logFilePath = self.ROOT_PATH + "/logs/" + 'logfile.log'
         fileHandler = logging.FileHandler(logFilePath, mode='w')
         fileHandler.setFormatter(formatter)

@@ -1,0 +1,7 @@
+2024-02-12 14:36:42,030 :INFO : test_login_swaglabs :self driver ref is:2265231019664
+2024-02-12 14:36:42,036 :INFO : test_login_swaglabs :title is: Swag Labs
+2024-02-12 14:36:42,039 :INFO : test_login_swaglabs :current url is: https://www.saucedemo.com/
+2024-02-12 14:36:42,144 :INFO : test_login_swaglabs :Entered Username: standard_user
+2024-02-12 14:36:42,229 :INFO : test_login_swaglabs :Entered Password: secret_sauce
+2024-02-12 14:36:42,343 :INFO : test_login_swaglabs :Login Success
+2024-02-12 14:36:42,553 :INFO : test_login_swaglabs :Logout Success

@@ -1,13 +1,6 @@
-2024-02-12 11:05:00,290 :INFO : TestLoginSession :self driver ref is:3048972401552
-2024-02-12 11:05:00,402 :INFO : TestLoginSession :title is: Swag Labs
-2024-02-12 11:05:00,422 :INFO : TestLoginSession :current url is: https://www.saucedemo.com/
-2024-02-12 11:05:00,971 :INFO : TestLoginSession :Entered Username: standard_user
-2024-02-12 11:05:01,161 :INFO : TestLoginSession :Entered Password: secret_sauce
-2024-02-12 11:05:01,423 :INFO : TestLoginSession :Login Success
-2024-02-12 11:05:01,731 :INFO : TestLoginSession :Logout Success
-2024-02-12 11:05:01,737 :INFO : TestLoginSession :self driver ref is:3048972401552
-2024-02-12 11:05:01,748 :INFO : TestLoginSession :title is: Swag Labs
-2024-02-12 11:05:01,759 :INFO : TestLoginSession :current url is: https://www.saucedemo.com/
-2024-02-12 11:05:02,048 :INFO : TestLoginSession :Entered Username: locked_out_user
-2024-02-12 11:05:02,253 :INFO : TestLoginSession :Entered Password: secret_sauce
-2024-02-12 11:05:02,419 :INFO : TestLoginSession :Given user is locked. info: Epic sadface: Sorry, this user has been locked out.
+2024-02-12 14:33:04,176 :INFO : test_locked_user_login :self driver ref is:2531728297360
+2024-02-12 14:33:04,183 :INFO : test_locked_user_login :title is: Swag Labs
+2024-02-12 14:33:04,188 :INFO : test_locked_user_login :current url is: https://www.saucedemo.com/
+2024-02-12 14:33:04,292 :INFO : test_locked_user_login :Entered Username: locked_out_user
+2024-02-12 14:33:04,386 :INFO : test_locked_user_login :Entered Password: secret_sauce
+2024-02-12 14:33:04,462 :INFO : test_locked_user_login :Given user is locked. info: Epic sadface: Sorry, this user has been locked out.
