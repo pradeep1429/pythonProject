@@ -8,7 +8,7 @@
 # arbitrarily many positional (*args),
 # keyword-only arguments
 # arbitrary keyword arguments (**kwargs).
-def argSequence(arg1, arg2, *args, kwarg1="Hello", kwarg2="World", **kwargs):
+def argSequence(arg1, arg2, *args, kwarg1=20, kwarg2="World", **kwargs):
     print(f"arg1: {arg1}")
     print(f"arg2: {arg2}")
     for i, arg in enumerate(args):
@@ -18,4 +18,5 @@ def argSequence(arg1, arg2, *args, kwarg1="Hello", kwarg2="World", **kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-argSequence(1, 2, 3, 4, 5, kwarg1="Greetings,", extra1="extra", extra2="arguments")
+argSequence(1, 2, 3, 4, 5, kwarg1=10, extra1="extra", extra2="arguments")
+argSequence(1, 2, 3, 4, 5, kwarg1="Greetings ,", extra1="extra", extra2="arguments")

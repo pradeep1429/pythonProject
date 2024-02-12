@@ -6,23 +6,28 @@
 
 
 x = 10  # Global variable
+class Legb:
+    def __init__(self):
+        global x
+        x = 46
+        print(x, id(x))
+    def func(self):
+        x = 20  # Local variable
+        print("Local : ", x, id(x))
+        # nonlocal var1 --> You can’t use a nonlocal statement in either the global scope or in a local scope
 
-def func():
-    x = 20  # Local variable
-    print("Local : ", x, id(x))
-    # nonlocal var1 --> You can’t use a nonlocal statement in either the global scope or in a local scope
-
-    def inner_func():
-        nonlocal x
-        x = 30  # Changes the local variable of the outer function
-        print("Nonlocal : ", x, id(x))
+        def inner_func():
+            nonlocal x
+            x = 30  # Changes the local variable of the outer function
+            print("Nonlocal : ", x, id(x))
 
 
-    inner_func()
-    var = 23
-    print(var)
+        inner_func()
+        var = 23
+        print(var)
 
 
-func()
+l = Legb()
+print(l.func())
 print("Global : ", x,id(x))
 

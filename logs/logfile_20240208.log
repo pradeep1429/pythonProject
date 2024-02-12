@@ -1,0 +1,38 @@
+2024-02-08 17:48:42,741 :INFO : TestOrderPlacement :self driver ref is:1781039183824
+2024-02-08 17:48:42,745 :INFO : TestOrderPlacement :title is: Swag Labs
+2024-02-08 17:48:42,749 :INFO : TestOrderPlacement :current url is: https://www.saucedemo.com/
+2024-02-08 17:48:42,862 :INFO : TestOrderPlacement :Entered Username: error_user
+2024-02-08 17:48:42,939 :INFO : TestOrderPlacement :Entered Password: secret_sauce
+2024-02-08 17:48:43,171 :INFO : TestOrderPlacement :Item added to cart
+2024-02-08 17:48:43,217 :INFO : TestOrderPlacement :Checkout page opened
+2024-02-08 17:48:43,273 :INFO : TestOrderPlacement :First names entered as: test
+2024-02-08 17:48:43,329 :INFO : TestOrderPlacement :last_name entered as: user
+2024-02-08 17:48:43,378 :INFO : TestOrderPlacement :postal_code entered as: 23423
+2024-02-08 17:48:43,422 :INFO : TestOrderPlacement :Continue button clicked
+2024-02-08 17:48:43,453 :INFO : TestOrderPlacement :Finish button clicked
+2024-02-08 17:49:13,463 :ERROR : TestOrderPlacement :Something went wrong, Order not placed:
+ Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='complete-header']"}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF79B245E42+3538674]
+	(No symbol) [0x00007FF79AE64C02]
+	(No symbol) [0x00007FF79AD15AEB]
+	(No symbol) [0x00007FF79AD5BF4E]
+	(No symbol) [0x00007FF79AD5C0CC]
+	(No symbol) [0x00007FF79AD9E477]
+	(No symbol) [0x00007FF79AD7F0EF]
+	(No symbol) [0x00007FF79AD9BDE3]
+	(No symbol) [0x00007FF79AD7EE53]
+	(No symbol) [0x00007FF79AD4F514]
+	(No symbol) [0x00007FF79AD50631]
+	GetHandleVerifier [0x00007FF79B276CAD+3738973]
+	GetHandleVerifier [0x00007FF79B2CC506+4089270]
+	GetHandleVerifier [0x00007FF79B2C4823+4057299]
+	GetHandleVerifier [0x00007FF79AF95C49+720121]
+	(No symbol) [0x00007FF79AE7126F]
+	(No symbol) [0x00007FF79AE6C304]
+	(No symbol) [0x00007FF79AE6C432]
+	(No symbol) [0x00007FF79AE5BD04]
+	(No symbol) [0x00007FFFDC5C7344]
+	RtlUserThreadStart [0x00007FFFDD1E26B1+33]
+
