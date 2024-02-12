@@ -1,5 +1,3 @@
-import time
-
 import pytest
 
 from swaglabs.LoginPage import LoginPage
@@ -11,6 +9,7 @@ class TestLoginSession():
     log = Base.getLogger()
     driver = None
 
+    #@pytest.mark.parametrize("setup_session", "common", indirect=True)
     def test_login_swaglabs(self,setup_session):
         self.driver = setup_session
         loginPage = LoginPage(self.driver,self.log)

@@ -1,3 +1,5 @@
+import configparser
+
 
 def smartDiv(func):
     f=5
@@ -49,3 +51,27 @@ def pattern(value):
     print(value)
 
 pattern("pradeep")
+
+
+def ini_loader(section):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            parser = configparser.ConfigParser()
+            parser.read("C:\\Users\\Pradeep_Avadhanam\\Workspace\\pythonProject\\data.ini")
+            kwargs[section] = dict(parser.items(section))
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
+def read_ini(decorated_function,section):
+    def wrapper_function(*args, **kwargs):
+        config = configparser.ConfigParser()
+        config.read("C:\\Users\\Pradeep_Avadhanam\\Workspace\\pythonProject\\data.ini")
+
+        return decorated_function(config, *args, **kwargs)
+    return wrapper_function
+
+@ini_loader('common')
+def get_web_server_host(common):
+    return common.get('browser')
+
+print(get_web_server_host())
