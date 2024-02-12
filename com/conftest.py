@@ -80,6 +80,10 @@ class TestPlugin:
 
     @pytest.hookimpl(tryfirst=True, hookwrapper=True)
     def pytest_runtest_makereport(self, item, call):
+        #'item': It represents a single test item (a test function or method).
+        # An item is characterized by its nodeid which denotes a file-system-like path from the collection root down to the test, for example "test_folder/test_file.py::test_func".
+        # It's an instance of _pytest.nodes.Item class.
+        #'call': A CallInfo instance that encapsulates the results of invoking a test function/method. CallInfo has the following attributes:
         # execute all other hooks to obtain the report object
         pytest_html = item.config.pluginmanager.getplugin('html')
         outcome = yield
@@ -109,3 +113,15 @@ def start_plugin(pytestconfig):
     return pytestconfig
 
 
+# Use fixtures when:
+# You want to set up and tear down code for tests, such as: setting up database connections, creating a temporary file or directory, initializing certain variables, etc.
+# You need to share data or state among multiple tests.
+# You require a modular and scalable setup for your tests. Fixtures can be used in other fixtures, in tests, and even in conftest.py for code reusability.
+# Explicit usage needs to be shown. Fixtures need to be declared either in the test function arguments or with pytest.mark.usefixtures hence it's clear to see where they are being used.
+#
+# Use hooks when:
+# You need to customize or manipulate the behavior of pytest itself, such as: changing how pytest discovers tests, adding command line options, handling logging, or modifying the test report.
+# The action needs to be done once per session or per module, such as starting up a browser just once for a series of tests (you can use fixtures to do this as well, but a session or module scoped hook can be a cleaner approach).
+# Implicit changes need to be done across multiple tests, modules or the whole test suite.
+# You want to add or custom handle failures, warnings, errors or reports.
+# In summary, hooks influence the general pytest execution process, and provide implicit, global-level changes. Fixtures, however, are used for more local, explicit actions – influencing tests directly or providing data for tests.

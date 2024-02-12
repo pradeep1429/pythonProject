@@ -1,9 +1,9 @@
-2024-02-12 14:36:59,059 :INFO : TestParamOrderPlacement :self driver ref is:2466928464464
-2024-02-12 14:36:59,064 :INFO : TestParamOrderPlacement :title is: Swag Labs
-2024-02-12 14:36:59,071 :INFO : TestParamOrderPlacement :current url is: https://www.saucedemo.com/
-2024-02-12 14:36:59,203 :INFO : TestParamOrderPlacement :Entered Username: locked_out_user
-2024-02-12 14:36:59,294 :INFO : TestParamOrderPlacement :Entered Password: secret_sauce
-2024-02-12 14:37:29,405 :ERROR : TestParamOrderPlacement :Item not added to cart: 
+2024-02-12 15:29:04,380 :INFO : TestParamOrderPlacement :self driver ref is:1923905889168
+2024-02-12 15:29:04,385 :INFO : TestParamOrderPlacement :title is: Swag Labs
+2024-02-12 15:29:04,390 :INFO : TestParamOrderPlacement :current url is: https://www.saucedemo.com/
+2024-02-12 15:29:04,487 :INFO : TestParamOrderPlacement :Entered Username: locked_out_user
+2024-02-12 15:29:04,557 :INFO : TestParamOrderPlacement :Entered Password: secret_sauce
+2024-02-12 15:29:34,625 :ERROR : TestParamOrderPlacement :Item not added to cart: 
 Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="add-to-cart-sauce-labs-backpack"]"}
   (Session info: chrome=121.0.6167.161); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Stacktrace:
@@ -29,18 +29,18 @@ Stacktrace:
 	(No symbol) [0x00007FFFDC5C7344]
 	RtlUserThreadStart [0x00007FFFDD1E26B1+33]
 
-2024-02-12 14:37:29,405 :ERROR : TestParamOrderPlacement :iteration {'user_name': 'locked_out_user', 'password': 'secret_sauce'} failed
-2024-02-12 14:37:59,632 :INFO : TestParamOrderPlacement :self driver ref is:2466928464464
-2024-02-12 14:37:59,636 :INFO : TestParamOrderPlacement :title is: Swag Labs
-2024-02-12 14:37:59,639 :INFO : TestParamOrderPlacement :current url is: https://www.saucedemo.com/
-2024-02-12 14:37:59,734 :INFO : TestParamOrderPlacement :Entered Username: standard_user
-2024-02-12 14:37:59,807 :INFO : TestParamOrderPlacement :Entered Password: secret_sauce
-2024-02-12 14:38:00,024 :INFO : TestParamOrderPlacement :Item added to cart
-2024-02-12 14:38:00,064 :INFO : TestParamOrderPlacement :Checkout page opened
-2024-02-12 14:38:00,113 :INFO : TestParamOrderPlacement :First names entered as: test
-2024-02-12 14:38:00,162 :INFO : TestParamOrderPlacement :last_name entered as: user
-2024-02-12 14:38:00,209 :INFO : TestParamOrderPlacement :postal_code entered as: 23423
-2024-02-12 14:38:00,252 :INFO : TestParamOrderPlacement :Continue button clicked
-2024-02-12 14:38:00,290 :INFO : TestParamOrderPlacement :Finish button clicked
-2024-02-12 14:38:00,305 :INFO : TestParamOrderPlacement :Order placed successfully
-2024-02-12 14:38:00,437 :INFO : TestParamOrderPlacement :Logout Success
+2024-02-12 15:29:34,625 :ERROR : TestParamOrderPlacement :iteration {'user_name': 'locked_out_user', 'password': 'secret_sauce'} failed
+2024-02-12 15:39:34,425 :INFO : TestParamOrderPlacement :self driver ref is:1923905889168
+2024-02-12 15:39:34,443 :INFO : TestParamOrderPlacement :title is: Swag Labs
+2024-02-12 15:39:34,456 :INFO : TestParamOrderPlacement :current url is: https://www.saucedemo.com/
+2024-02-12 15:39:34,591 :INFO : TestParamOrderPlacement :Entered Username: standard_user
+2024-02-12 15:39:34,725 :INFO : TestParamOrderPlacement :Entered Password: secret_sauce
+2024-02-12 15:39:34,973 :INFO : TestParamOrderPlacement :Item added to cart
+2024-02-12 15:39:35,042 :INFO : TestParamOrderPlacement :Checkout page opened
+2024-02-12 15:39:35,112 :INFO : TestParamOrderPlacement :First names entered as: test
+2024-02-12 15:39:35,187 :INFO : TestParamOrderPlacement :last_name entered as: user
+2024-02-12 15:39:35,279 :INFO : TestParamOrderPlacement :postal_code entered as: 23423
+2024-02-12 15:39:35,358 :INFO : TestParamOrderPlacement :Continue button clicked
+2024-02-12 15:39:35,426 :INFO : TestParamOrderPlacement :Finish button clicked
+2024-02-12 15:39:35,468 :INFO : TestParamOrderPlacement :Order placed successfully
+2024-02-12 15:39:35,682 :INFO : TestParamOrderPlacement :Logout Success
