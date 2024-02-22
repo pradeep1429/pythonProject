@@ -1,4 +1,4 @@
-import pandas as pd
+import dataframes as pd
 
 
 def excel_to_dict(file_name, sheet_name):
