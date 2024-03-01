@@ -63,3 +63,64 @@ print("Original:", original_dict, original_set, original_tuple)
 print("Shallow:", shallow_dict, shallow_set, shallow_tuple)
 print("Deep:", deep_dict, deep_set, deep_tuple)
 
+dict_comp = {  "count": 24,  "players": [    {      "id": 439,      "name": "David de Gea",      "position": "Keeper",      "jerseyNumber": 1,      "dateOfBirth": "1990-11-07",      "nationality": "Spain",      "contractUntil": "2019-06-30",      "marketValue": None    },    {      "id": 440,      "name": "Sergio Romero",      "position": "Keeper",      "jerseyNumber": 20,      "dateOfBirth": "1987-02-22",      "nationality": "Argentina",      "contractUntil": "2018-06-30",      "marketValue": None    },    {      "id": 441,      "name": "Eric Bailly",      "position": "Centre-Back",      "jerseyNumber": 3,      "dateOfBirth": "1994-04-12",      "nationality": "Cote d'Ivoire",      "contractUntil": "2020-06-30",      "marketValue": None    }  ]}
+spain_players = [player for player in dict_comp['players'] if player['nationality'] == "Spain"]
+print(spain_players)
+print(dict_comp['players'][0].get('nationality'))
+
+users = {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+print([user for user in users['data'] if user['email']=='tobias.funke@reqres.in'])
+print({user['id']:user['email'] for user in users['data']})

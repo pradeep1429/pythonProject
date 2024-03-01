@@ -68,6 +68,10 @@ print(f'original:{original}')    # Output: [[1, 1, 1], ['X', 2, 2], [3, 3, 3]]
 print(f'deep: {deep}')     # Output: [[1, 1, 1], ['2', 2, 2], [3, 3, 3]]
 print(id(original), id(deep))
 
+print([[row+col for col in range(3)] for row in range(5)])
+print([[col for col in range(row,row+3)] for row in range(1,15,3)])
+
+
 
 
 
