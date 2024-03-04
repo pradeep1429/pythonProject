@@ -2,10 +2,7 @@ import configparser
 
 
 def smartDiv(func):
-    f=5
     def inner(a,b):
-        # f = f+5
-        print(f)
         if a<b:
             a,b = b,a
         return func(a,b)
@@ -46,7 +43,6 @@ def dashdecor(func):
     return inner
 
 @eqdecor
-@dashdecor
 def pattern(value):
     print(value)
 
@@ -62,13 +58,13 @@ def ini_loader(section):
             return func(*args, **kwargs)
         return wrapper
     return decorator
-def read_ini(decorated_function,section):
-    def wrapper_function(*args, **kwargs):
-        config = configparser.ConfigParser()
-        config.read("C:\\Users\\Pradeep_Avadhanam\\Workspace\\pythonProject\\data.ini")
-
-        return decorated_function(config, *args, **kwargs)
-    return wrapper_function
+# def read_ini(decorated_function,section):
+#     def wrapper_function(*args, **kwargs):
+#         config = configparser.ConfigParser()
+#         config.read("C:\\Users\\Pradeep_Avadhanam\\Workspace\\pythonProject\\data.ini")
+#
+#         return decorated_function(config, *args, **kwargs)
+#     return wrapper_function
 
 @ini_loader('common')
 def get_web_server_host(common):

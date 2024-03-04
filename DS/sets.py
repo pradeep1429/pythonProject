@@ -45,8 +45,10 @@ print(set1 == set2)
 lstst = {1,"ds",(1,2,"asd",5)}
 print(lstst)
 #lstst = {1,"ds",[1,2,"asd",5]} -> generate TypeError: unhashable type: 'list'
-L = (1,2,3)
+L = {1,2,3}
 L1 = L
 L1.remove(2)
 print(L)
 print(L1)
+print(L is L1)
+print(L == L1)
