@@ -49,6 +49,11 @@ print(type(L).__name__)
 print([y for x in L for y in x]) #[expression for item in iterable]
 nl = [1, 2, [3, 4, 5, 6 ], 7, 8, [9, 10 ] ]
 print([indiv for inner in nl for indiv in (inner if isinstance(inner, list) else [inner])])
+def flatten(lst):
+    return [elem for sublist in lst for elem in (flatten(sublist) if isinstance(sublist, list) else [sublist])]
+nested_list = [1, [[2]], [3, 4], 5]
+flat_list = flatten(nested_list)
+print(flat_list)  # Output: [1, 2, 3, 4, 5]
 print([y for x in nl for y in (x if isinstance(x, list) else [x])])
 lst = [12,4,3,65,23,{76,98,34},(20,25,50)]
 print(lst[6][1:])

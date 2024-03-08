@@ -71,3 +71,22 @@ def get_web_server_host(common):
     return common.get('browser')
 
 print(get_web_server_host())
+
+
+# Sort mobile numbers and add prefix with +91
+mob = [917895462130,919875641230,9195969878]
+print(['+91 ' + str(i)[-10:-5] + ' ' + str(i)[-5:] for i in mob])
+print(str(mob[0])[-10:-5])
+print(str(mob[0])[-5:])
+def mob_wrapper(func):
+    def inner(lst):
+        lst = ['+91 ' + str(i)[-10:-5] + ' ' + str(i)[-5:] for i in lst]
+        func(lst)
+    return inner
+
+
+@mob_wrapper
+def sort_mobile(mob):
+    print(*sorted(mob),end="\n")
+
+sort_mobile(mob)
