@@ -15,7 +15,7 @@ from api.utility.requests import Requests
 
 class TestSample:
 
-    __access_token = "Bearer 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"
+    __access_token = "Bearer token"
 
     def test_get_validate_status_code_200(self,api_client):
         api_client.end_point = "api/products/2"
@@ -127,7 +127,7 @@ class TestSample:
     def test_session_login(self):
         s = requests.Session()
         url = "http://localhost:8080"
-        s.auth = HTTPBasicAuth("admin", "11f3bf0336ce6e037f8b70db6ca06a1621")
+        s.auth = HTTPBasicAuth("admin", "token")
         response = s.post(url)
         ic(response.text)
         crumb_response = s.get(f"{url}/crumbIssuer/api/json")
@@ -156,7 +156,7 @@ class TestSample:
         print(res.text)
 
     def test_open_weather(self, api_client):
-        key = "df42768d34159a681b93f79a97190561"
+        key = "token"
         api_client.base_url = "http://api.openweathermap.org"
         api_client.end_point = "/geo/1.0/direct"
         api_client.addParams({"q":"Hyderabad","limit":"5","appid":f"{key}"})
