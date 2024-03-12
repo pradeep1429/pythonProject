@@ -263,3 +263,11 @@ for i in range(3):
     end += chunk_size
 
 #################################################################################
+# L1 = [23, 21, 2, 32, 4, 89, 10, 5, 0, 99, 12]
+# 1)Convert above list in dictionary with key as index and value as pairs  , desired o/p-{'0':'23','1':'21','2':'2',......}
+# 2)convert above list in dict with key value pair {'23':'21','2':'32','4':'89','10':'5','0':'99'}
+L1 = [23, 21, 2, 32, 4, 89, 10, 5, 0, 99]
+print({k:v for (k,v) in enumerate(L1)})
+print({L1[i]:L1[i+1] for i in range(0,len(L1),2)})
+
+#################################################################################
