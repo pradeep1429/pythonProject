@@ -8,6 +8,7 @@ print(df.Name,df['Team'])
 print(df[['Name','Weight','Salary']])
 print(df.shape)
 print(df.info)
+ic(df.to_json(orient='records'))
 #Basic Analysis
 ic(df.Age.value_counts(dropna=False))
 ic(df.Position.value_counts(ascending=True))

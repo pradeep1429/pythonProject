@@ -22,7 +22,8 @@ class TestSample:
         api_client.headers = {}
         response = Requests.get(api_client)
         print(response.status_code)
-        print(loads(response.text))
+        print(type(loads(response.text)))
+        print(type(json.dumps(response.json(), indent=2)))
 
 
 
