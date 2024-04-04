@@ -1,4 +1,3 @@
-
 import pandas as pd
 from icecream import ic
 
@@ -61,3 +60,7 @@ ps.reset_index(inplace=True)
 # for tm in ps.groupby('Team'):
 #     print(tm.sort_values('Team', ascending=False))
 print(ps)
+
+json_string = '[{"Name": "Nik", "Age": 33, "Sales": 33.33}, {"Name": "Kate", "Age": 33, "Sales": 56.32}]'
+df = pd.read_json(json_string)
+print(df)

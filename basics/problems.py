@@ -607,15 +607,13 @@ max_wins = 0
 team_name = None
 for team,result in zip(teams,results):
     consecutive_wins = 0
-    max_wins_team = 0
-    for res in results:
+    for res in result:
         if res == "w":
             consecutive_wins += 1
         else:
-            consecutive_wins = 0
-        max_wins_team = max(max_wins_team, consecutive_wins)
+            break
 
-    if max_wins_team > max_wins:
-        max_wins = max_wins_team
+    if consecutive_wins > max_wins:
+        max_wins = consecutive_wins
         team_name = team
 print(team_name)
