@@ -1,5 +1,7 @@
 import sqlite3
 
+import pandas as pd
+import requests
 
 connection = sqlite3.connect('C:\\Users\\Pradeep_Avadhanam\\AppData\\Local\\DBeaver\\sqllite\\hello.sqllite')
 cursor = connection.cursor()
@@ -15,6 +17,23 @@ cursor.execute(query)
 rows = cursor.fetchall()
 for row in rows:
     print(row, type(row))
+    print(row[2:3])
 
+
+
+
+api_json = requests.get("https://reqres.in/api/products/2")
+api_data = api_json.text
+print(api_data)
+api_df = pd.read_json(api_data)
+print(api_df.support['url'])
+
+db_df = pd.read_sql(query,connection)
+print(db_df.head())
+
+api_df = api_df.astype(str).apply(lambda x: x.str.lower())
+db_df = db_df.astype(str).apply(lambda x: x.str.lower())
+print(api_df)
+print(db_df)
 connection.commit()
 connection.close()

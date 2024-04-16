@@ -32,3 +32,10 @@ class ContextManager:
 
 with ContextManager() as cm:
      print(cm)
+
+with open('context_manager_file.txt', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        words = line.split(" ")
+        for word in words:
+            print(word)
